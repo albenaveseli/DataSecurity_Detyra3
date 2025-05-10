@@ -1,26 +1,30 @@
-# Secure Password Manager with AES Encryption and Multi-Device Sync
+# 🔐 Secure Password Manager with AES Encryption and Multi-Device Sync
 
-Ky është një aplikacion për menaxhimin e fjalëkalimeve që siguron ruajtjen e kredencialeve të përdoruesit në mënyrë të enkriptuar duke përdorur algoritmin AES.
+This is a lightweight and secure password management application that stores user credentials in an encrypted format using the AES (Advanced Encryption Standard) algorithm. It is designed for local use with basic cross-device synchronization via an external encrypted file.
 
-## Karakteristikat
-- Gjenerim i fjalëkalimeve të forta
-- Enkriptim dhe dekriptim me AES
-- Organizim i fjalëkalimeve sipas kategorive
-- Sinkronizim bazik përmes ruajtjes në një skedar të jashtëm
+---
 
-## Si të përdorni
-1. Kompiloni projektin:
+## 🚀 Features
+
+- 🔑 **Strong Password Generation**  
+  Random and secure passwords generated using customizable criteria.
+
+- 🛡️ **AES Encryption & Decryption**  
+  Ensures confidentiality of your credentials using AES symmetric encryption.
+
+- 📁 **Categorized Credential Storage**  
+  Organize your passwords based on usage (e.g., Social, Work, Banking).
+
+- 🔄 **Basic Multi-Device Sync**  
+  Synchronize credentials by sharing the encrypted data file across devices.
+
+---
+
+## 🛠️ How to Use
+
+### 1. Compile the Project
+Make sure you have Java installed. Then compile all source files:
+
 ```bash
 javac -d bin src/**/*.java
-```
-2. Ekzekutoni aplikacionin:
-```bash
-java -cp bin Main
-```
 
-## Strukturë e Projektit
-- `model/Credential.java`: Përfaqëson kredencialet (emër përdoruesi, fjalëkalim, kategori)
-- `utils/AESUtil.java`: Enkripton dhe dekripton të dhënat me AES
-- `utils/PasswordGenerator.java`: Gjeneron fjalëkalime të rastësishme dhe të forta
-- `service/PasswordManager.java`: Menaxhon shtimin, ruajtjen dhe leximin e kredencialeve
-- `data/credentials.enc`: Skedari i enkriptuar me të dhënat
